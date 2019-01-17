@@ -1,0 +1,277 @@
+body{
+  font-family: 'Dancing Script';
+  background: #000;
+  color: #fff;
+  font-size: 19px;
+
+}
+img{
+  box-shadow: 2px 2px 2px  #02010a;
+}
+
+.contenedor{
+  width: 900px;
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 0px;
+}
+.contenedor{
+  animation: animacion 2s;
+}
+@-webkit-keyframes animacion  {
+  0%{
+    margin-top:150px;
+  }
+  60%{
+    margin-top: -5px;
+  }
+  100%{
+    margin-top: 0px;
+  }
+}
+.header{
+  background: #5b7989;
+  color: #fff;
+  height: 4em;
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header h1{
+  text-shadow: 2px 2px 2px #02010a;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.header a{
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  flex-grow: 1;
+
+}
+.header nav{
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+.principal{
+  background: #82c3a6;
+  width: 100%;
+
+
+}
+.imagen_principal{
+  width:50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px 0;
+}
+.imagen_principal img{
+  width: 100%;
+
+
+}
+.secundario{
+  background: #d5c75f;
+  width: 100%;
+  border: 1px;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.ind1, .ind2 {
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.ind1, .ind2{
+  width: 100%;
+  margin: 40px 0;
+
+}
+.sec1 , .sec2 {
+  width: 40%;
+  margin-left: 5%;
+
+
+}
+.ind1:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6 ;
+}
+.ind2:hover{
+  transform:translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6 ;
+}
+.footer{
+  background: #C6d5c5;
+  color: #000;
+  margin-top: -16px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contacto , .termino, .redes, .derechos{
+  width: 23%;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left:10px;
+  padding-left: 30px;
+
+}
+
+.ico1,.ico2,.ico3{
+  width: 20px;
+  margin-right: 10px;
+  box-shadow: none;
+  transition-property: all;
+  transition-duration: 0.2s;
+  opacity: 1;
+  border-radius: 45%;
+}
+.ico3{
+  width:25px !important;
+}
+.ico1:hover,.ico2:hover,.ico3:hover{
+
+  background:#A0FDB9;
+  opacity: 0.95;
+}
+@media all and (max-width:900px) and (min-width:500px){
+  .contenedor{
+    width: 100%;
+    flex-direction: column;
+  }
+  .header{
+    width: 100%;
+    padding: 0;
+    flex-direction:row;
+  }
+  .header h1{
+    margin: 0 25%;
+  }
+  .header nav {
+    width: 100%;
+    margin:0 30%;
+
+  }
+  .principal{
+    width: 100%;
+  }
+  .imagen_principal{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .index_principal{
+    width: 90%;
+  }
+  .secundario{
+    width: 100%;
+  }
+  .sec1, .sec2{
+    width: 90%;
+  }
+  .ind1, .ind2{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .footer{
+    width: 100%;
+  }
+  .contacto{
+    width: 80%;
+    order: 1;
+    margin-left: 5%;
+  }
+  .termino{
+    width: 80%;
+    order:2;
+    margin-left: 5%;
+  }
+  .redes{
+    width: 80%;
+    order:3;
+    margin-left: 5%;
+  }
+  .derechos{
+    width: 80%;
+    order: 4;
+    margin-left: 5%;
+  }
+}
+@media all and (max-width:800px) {
+
+.contenedor{
+  width: 100%;
+  flex-direction: column;
+}
+.header{
+  width: 100%;
+  padding: 0;
+  flex-direction:row;
+}
+.header h1{
+  margin: 0 0;
+}
+.header nav {
+  width: 100%;
+  margin:0 5%;
+
+}
+.principal{
+  width: 100%;
+}
+.imagen_principal{
+  width: 90%;
+  margin-left: 5%;
+}
+.index_principal{
+  width: 90%;
+}
+.secundario{
+  width: 100%;
+}
+.sec1, .sec2{
+  width: 90%;
+}
+.ind1, .ind2{
+  width: 90%;
+  margin-left: 5%;
+}
+.footer{
+  width: 100%;
+}
+.contacto{
+  width: 80%;
+  order: 1;
+  margin-left: 5%;
+}
+.termino{
+  width: 80%;
+  order:2;
+  margin-left: 5%;
+}
+.redes{
+  width: 80%;
+  order:3;
+  margin-left: 5%;
+}
+.derechos{
+  width: 80%;
+  order: 4;
+  margin-left: 5%;
+}
+}
